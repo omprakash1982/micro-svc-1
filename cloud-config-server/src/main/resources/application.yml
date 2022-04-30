@@ -1,0 +1,15 @@
+server:
+  port: 9296
+
+  spring:
+      application:
+         name: CONFIG-SERVER
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/omprakash1982/config-server
+          skipSslValidation: true
+        clone-on-start: true
+
